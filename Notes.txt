@@ -1,0 +1,40 @@
+Introduction to Node JS
+----------------------------
+
+What is Node Js?
+------------------
+
+Node JS is a Javascript runtime built on Chrome's V8 Engine
+Node JS is Javascript running on server.
+
+The runtime environment is an environment in which your application runs
+
+Google had developed an engine to parse Javascript code in Machine Code.
+This engine's name is V8 Engine.
+Similarly we have,
+    SpiderMonkey engine in Mozilla
+    Nitro Engine in Apple Safari
+
+Ryan Dahl wrote a C++ program and embedded Chrome's V8 Engine in it.
+The application was called Node.exe later NodeJs
+
+Node Js is not a framework or a library, its a runtime environment.
+
+When to use Node JS
+------------------------
+1. I/O Bound
+    NodeJS is single threaded - non I/O blocking.
+    Which means, it can take multiple requests at a time.
+    But it will ot keep waiting for response from DB/Network/Disk,
+    it will process other request immideately.
+
+2. Data Streaming application
+    When we want to create applications like Netflix, Instagram, Hotstar.
+    Which keep loading the content, no matter how much we scroll.
+
+3. Real Time application
+    Like Whatsapp/ Hike
+
+When not to use Node JS
+------------------------
+For CPU Intensive tasks
