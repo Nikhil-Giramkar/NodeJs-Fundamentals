@@ -91,4 +91,26 @@ Path Module
 With this module we can determine
 Root folder, extension, basename, etc infor for a given path of file/folder
 Check more info  at: https://nodejs.org/docs/latest-v18.x/api/path.html
+--------------------------------------------------------------------------------------------------------------------------------------------
 
+Node Package Manager (NPM)
+---------------------------
+Node package manager (npm) is a package manager and a software register but 
+it's also a place where developers can find, build and manage code packages. 
+Right now, npm contains over 800,000 packages for various applications, 
+from front-end and robotics to mobile apps.
+
+To use npm in our application.
+    Write "npm init" in terminal
+at root location of app.
+
+We get a package.json file.
+Lets install a package, "chalk"
+    npm install chalk@4.1.0
+
+We now get all info about chalk package in package-lock.json
+and also it gets appended in package.json.
+Node modules are also generated which has all the code of chalk package.
+
+We genrally ignore node_modules
+Hence added it in .gitignore
