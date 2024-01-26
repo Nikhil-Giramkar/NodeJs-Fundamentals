@@ -44,3 +44,12 @@ For CPU Intensive tasks
 First Program in Node js
 ----------------------------
 Create a file index.js
+Run it on vscode terminal
+    node index.js
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Prerequisites for NodeJs
+-----------------------------
+Basic Javascript - EventLoops/ Callbacks, etc.
+ECMA Script ES5/6
+Client Server Architecture
