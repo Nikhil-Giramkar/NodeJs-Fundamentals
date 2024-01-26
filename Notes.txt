@@ -69,3 +69,12 @@ The moment you write "node" in VSCode terminal and press enter
 you enter REPL environment.
 Just like the console in Browser
 whenever you type any Javascript code in the terminal, it responds back like Console tab of Browser
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Node JS Core Modules
+----------------------
+
+Consider modules to be same as JavaScript libraries
+A set of functions you want to include in your application. 
+
+Node Js has a set of built-in modules (Core Modules) which we can use without installation.
