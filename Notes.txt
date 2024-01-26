@@ -53,3 +53,19 @@ Prerequisites for NodeJs
 Basic Javascript - EventLoops/ Callbacks, etc.
 ECMA Script ES5/6
 Client Server Architecture
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+REPL in Node Js
+-------------------
+
+REPL is a feature in NodeJS useful in experimenting NodeJS code and debug JavaScript Code.
+
+R: Read user input, parse into JS data structure and store in memory
+E: Evaluate Data tructure
+P: Print the result
+L: Loops the above command until user presses Ctrl+C twice.
+
+The moment you write "node" in VSCode terminal and press enter
+you enter REPL environment.
+Just like the console in Browser
+whenever you type any Javascript code in the terminal, it responds back like Console tab of Browser
