@@ -78,3 +78,17 @@ Consider modules to be same as JavaScript libraries
 A set of functions you want to include in your application. 
 
 Node Js has a set of built-in modules (Core Modules) which we can use without installation.
+
+OS Module:
+-----------
+This module helps in getting OS information.
+Like architecture, free memory. total memory, etc.
+Check more in docs: https://nodejs.org/docs/latest-v18.x/api/os.html#os
+
+
+Path Module
+-----------------
+With this module we can determine
+Root folder, extension, basename, etc infor for a given path of file/folder
+Check more info  at: https://nodejs.org/docs/latest-v18.x/api/path.html
+
