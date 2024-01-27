@@ -140,5 +140,29 @@ Node Js Web Server
 -------------------
 Node Js provides a capability to create your own web server which will handle HTTP requests asynchronously.
 We can use IIS or Apache to run Node.js but it is recommended to use Node.js web server.
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Node Js Streams
+----------------
+
+Streams are objects that let you read data from a source and write dat to a destination
+in a continuous fashion. There are 4 types of streams in Node Js.
+
+Streaming means listening to music/ watching video in real time.
+Rather than dowloading first and watching later.
+
+1. Readable: Stream for read operation
+2. Writeable: Stream for write operation
+3. Duplex: Stream for both read/write
+4. Transform: A type of duplex stream where output is computed based on input
+
+Each type of stream is an EventEmitter instance (refer previous commit).
+It throws different events at different instances of time.
+Commonly used events are:
+
+data - this event is fired when data is available to read
+end - this event is fired when there is no more data to read.
+error - this event is fired when there's error in receiving/ writing data.
+finish - this event is fired when all data has been flushed to underlying system.
 
 
