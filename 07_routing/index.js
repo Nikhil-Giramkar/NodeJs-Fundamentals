@@ -1,10 +1,4 @@
-/*
-To route different client requests to various responses,
-We need to know the url which requested, so that we can route it to particular page
-*/
-
 const http = require('http');
-const url = require('url');
 
 const server = http.createServer((req, res)=>{
     //Which url isrequested by user?
