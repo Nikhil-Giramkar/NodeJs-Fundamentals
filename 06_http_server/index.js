@@ -16,4 +16,9 @@ server.listen(8765, "127.0.0.1", ()=>{
     //This line is printed on terminal
 })
 
-//Just by typing: http://localhost:8765/ in browser url bar, we get the response as written above
+/*
+start the server by typing:
+    nodemon index.js
+in terminal
+Just by typing: http://localhost:8765/ in browser url bar, we get the response as written above
+*/
