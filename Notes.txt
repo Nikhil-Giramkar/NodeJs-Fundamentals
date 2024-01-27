@@ -128,3 +128,10 @@ we will not see it as a dependancy in package.json of any app.
 Now next time onwards, instead of node index.js
 Type:   nodemon index.js
 This will automatically re trigger server if any changes detected.
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Module Wrapper functions
+------------------------
+Explanation: https://www.youtube.com/watch?v=kT2mSjAcYxM&list=PLwGdqUZWnOp00IbeN0OtL9dmnasipZ9x8&index=15
+Refer: IIFE in JS
+
