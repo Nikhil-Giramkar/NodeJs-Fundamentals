@@ -134,4 +134,11 @@ Module Wrapper functions
 ------------------------
 Explanation: https://www.youtube.com/watch?v=kT2mSjAcYxM&list=PLwGdqUZWnOp00IbeN0OtL9dmnasipZ9x8&index=15
 Refer: IIFE in JS
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Node Js Web Server
+-------------------
+Node Js provides a capability to create your own web server which will handle HTTP requests asynchronously.
+We can use IIS or Apache to run Node.js but it is recommended to use Node.js web server.
+
 
