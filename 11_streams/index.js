@@ -14,15 +14,17 @@ server.on("request", (req, res)=>{
     Until the content is completely downloaded
     */
     const fs = require("fs");
-    // fs.readFile("data.txt", "utf-8", (err, data)=>{
-    //     if(err)
-    //         return console.log(err);
-    //     res.end(data)
-    // }) 
+    /*
+    fs.readFile("data.txt", "utf-8", (err, data)=>{
+        if(err)
+            return console.log(err);
+        res.end(data)
+    }) 
+    */
 
     //Streaming data
     const readStream = fs.createReadStream("data.txt");
-
+    /*
     //When more chunks of data are yet to be streamed
     readStream.on("data", (chunkData)=>{
         res.write(chunkData);
@@ -39,6 +41,11 @@ server.on("request", (req, res)=>{
         console.log(err);
         res.end("File Not found");
     })
+    */
+
+    //We can do the entire stuff written above in a single line using pipe()
+    readStream.pipe(res);
+    //pipe() does all the work in background as mentioned above, it connects readable to writable stream
 })
 
 server.listen(8765, ()=>{
