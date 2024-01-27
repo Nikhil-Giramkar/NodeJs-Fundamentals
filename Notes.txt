@@ -114,3 +114,17 @@ Node modules are also generated which has all the code of chalk package.
 
 We genrally ignore node_modules
 Hence added it in .gitignore
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Nodemon
+--------
+nodemon is a tool that helps develop Node.js based applications by 
+automatically restarting the node application when file changes in the directory are detected.
+
+It is recommended to install it globally
+    npm install -g nodemon
+Since, it is installed globally,
+we will not see it as a dependancy in package.json of any app.
+Now next time onwards, instead of node index.js
+Type:   nodemon index.js
+This will automatically re trigger server if any changes detected.
