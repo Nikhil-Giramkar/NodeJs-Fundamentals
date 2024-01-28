@@ -39,6 +39,32 @@ app.get("/products", (req, res)=>{
     res.send("Hello from Products page");
 });
 
+const product = {
+    id: 1,
+    name: "Shoes",
+    color: "Red, Blue",
+    price: 50000
+}
+
+// app.get("/product", (req, res)=>{
+//     res.send(product);
+// })
+
+/* 
+res.send(products)
+    This will automatically convert Plain JS Object to JSON and display on UI
+    But it is recemmended to use:
+res.json(products)
+    res.json() method has an advantage that it converts non JS Objects like null/undefined into Json
+*/
+
+// app.get("/null", (req, res)=>{
+//     res.json(null);
+// })
+app.get("/product", (req, res)=>{
+    res.json(product);
+})
+
 
 //Listen at a port
 app.listen(8765, ()=>{
