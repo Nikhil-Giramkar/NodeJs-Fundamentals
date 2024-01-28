@@ -164,5 +164,27 @@ data - this event is fired when data is available to read
 end - this event is fired when there is no more data to read.
 error - this event is fired when there's error in receiving/ writing data.
 finish - this event is fired when all data has been flushed to underlying system.
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Express Js
+-------------
+
+What is Express Js?
+Its the most popular framework of Node Js.
+Express Js is a web applicatio framework which provides us simple API to build websites, web apps and backends.
+
+Need of Express Js?
+--------------------
+Writing a small REST API server in Node Js will take 5-10x more time and LOC than Express Js
+
+Create a folder, 
+    create app.js in it.
+    go to terminal in that folder and write
+        npm init
+    This will install npm and create a package.json
+    Then write  
+        npm install express
+
+
 
 
