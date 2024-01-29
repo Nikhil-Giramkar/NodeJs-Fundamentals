@@ -206,6 +206,10 @@ First we need to define the view engine.
 Then serve the hbs file to an end point via res.render()
 
 Now, we can show dynamic content inthe website by passing values into it.
-Similar to passing props in React
+Similar to passing props in React.
+
+Remove the index,html from public folder
+Keep the middleware which serves static files so that images and css are loaded properly.
+
 
 

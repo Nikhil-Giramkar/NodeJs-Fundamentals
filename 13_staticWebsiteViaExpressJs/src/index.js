@@ -10,7 +10,11 @@ const PORT = 8765;
 const staticPath = path.join(__dirname, "../public");
 
 //Useing "static" middleware for werving static webpages and providing pathn to it
-//app.use(express.static(staticPath));
+//This will serve CSS and Assets of website
+app.use(express.static(staticPath));
+
+//Set the path of views' folder
+app.set('views', path.join(__dirname, '../views'));
 
 //Setting the view engine used by us
 app.set("view engine", "hbs");
@@ -18,7 +22,7 @@ app.set("view engine", "hbs");
 //Serving that hbs file to an endpoint
 app.get("", (req, res)=>{
     res.render("index", {
-        userName: "Nikhil G"
+        userName: "Nikhil G" //passing props
     });
 });
 
