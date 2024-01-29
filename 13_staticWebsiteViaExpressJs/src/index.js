@@ -10,7 +10,18 @@ const PORT = 8765;
 const staticPath = path.join(__dirname, "../public");
 
 //Useing "static" middleware for werving static webpages and providing pathn to it
-app.use(express.static(staticPath));
+//app.use(express.static(staticPath));
+
+//Setting the view engine used by us
+app.set("view engine", "hbs");
+
+//Serving that hbs file to an endpoint
+app.get("", (req, res)=>{
+    res.render("index", {
+        userName: "Nikhil G"
+    });
+});
+
 
 app.listen(PORT, ()=>{
     console.log(`Express Server is listening at http://localhost:${PORT}`);

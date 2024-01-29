@@ -184,7 +184,28 @@ Create a folder,
     This will install npm and create a package.json
     Then write  
         npm install express
+--------------------------------------------------------------------------------------------------------------------------------------------
 
+Template Engines in Express Js
+--------------------------------
+Whenever we need to add dynamic content to our static websites, we need to use template engines in Express Js
+for rendering the dynamic content.
+Some popular te,plates are Pug, EJS, Mustache.
 
+For now, we will use handlebars.js, its an extension to template engine: Mustache.
+hbs is another package we would need as a view engine for handlebars.js
+
+Now go to root folder of website and type:
+    npm install hbs
+Now to use, hbs, we need to create a views older in root directory mandatorily.
+    Inside that views folder, create index.hbs file
+    We can write entire html code in that hbs file.
+
+Now, we can render this hbs file in ExpressJs.
+First we need to define the view engine.
+Then serve the hbs file to an end point via res.render()
+
+Now, we can show dynamic content inthe website by passing values into it.
+Similar to passing props in React
 
 
