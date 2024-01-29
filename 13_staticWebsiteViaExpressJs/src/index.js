@@ -1,6 +1,7 @@
 const express = require('express')
 const path = require('path');
 const app = express();
+const PORT = 8765;
 
 //To serve static web pages via express js,
 //We need to use a built in middleware as below
@@ -11,6 +12,6 @@ const staticPath = path.join(__dirname, "../public");
 //Useing "static" middleware for werving static webpages and providing pathn to it
 app.use(express.static(staticPath));
 
-app.listen(8765, ()=>{
-    console.log("Express Server is listening....");
+app.listen(PORT, ()=>{
+    console.log(`Express Server is listening at http://localhost:${PORT}`);
 })

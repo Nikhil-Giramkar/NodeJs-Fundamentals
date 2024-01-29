@@ -1,3 +1,356 @@
-h1 {
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lobster+Two:ital@1&family=Poppins:wght@400;500&display=swap');
+
+
+/* Resets/ Initial Setup */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Its a good practice to mention all colors at one place, whenever you wish go chang, 
+you will change from one place in script only. Declaring globally */
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    /* To emove the default underline */
+    display: inline-block;
+}
+
+li{
+    list-style: none;
+    /* To remove default bullet points */
+}
+
+/* Utility Classes */
+
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container{
+    /* All containers will have these pre-defined proprtties */
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+/* To avoid writing below lines for each container, since we'll be having multiple flexboxes */
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.hover-link{
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+    /* For animation on hovering */
+}
+.hover-link:hover{
+    color: var(--accent-color);
+}
+
+
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    color: white !important;
+    font-weight: 700;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+
+}
+
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    color: var(--primary-text-color) !important;
+    font-weight: 700;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.secondary-button:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+/* Top Banner */
+
+.banner-text{
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.top-banner{
+    background-color: #4fb3d4;
+    background-image: url(./assets/asset\ 32.png);
+    background-size: 300px; 
+    /* To make, background image items repeat and not show huge image items */
+}
+
+/* Nav Bar Panel*/
+
+.main-nav{
+    margin-top: 20px;
+    justify-content: space-between;
+    /* Can use above property as it is already flexed */
+}
+.company-logo img{
+    width: 200px;
+}
+
+.nav-links{
+    flex-basis: 730px;
+}
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+}
+
+/* Header section */
+header{
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-left{
+    max-width: 40vw;
+
+}
+
+.header-left h1{
+    margin-top: 20px;
+}
+.header-right img{
+    width: 600px;
+}
+
+.get-started-button{
+    margin-top: 20px;
+}
+
+/* Companines section */
+
+.companies-header{
+    text-align: center;
+    margin-block: 30px;
+    /* This gives top and bottom both margins */
+    color: var(--primary-text-color);
+}
+
+.logos{
+    justify-content: space-between;
+    /* equal spacing between company logos */
+    flex-wrap: wrap;
+    /* So that logos come one below other, when screen size reduced */
+}
+.logo{
+    height: 46px;
+}
+
+/* Features section */
+.features-section{
+    padding: 80px var(--padding-inline-section) 0;
+    background-image: url(./assets/asset\ 41.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.features-section img{
+    width: 50px;
+}
+
+.features-header{
+    text-align: center;
+}
+
+.features-heaading-text{
+    margin-bottom: 20px;
+}
+
+.fetures-area{
+    flex-wrap: wrap;
+    /* To wrap all cards */
+    justify-content: space-between;
+    /* To align all cards centrally at equal dist */
+    gap: 40px;
+    /* To have gap between two rows of cards */
+    margin-top: 20px;
+}
+.feature-card{
+    flex-direction: column;
+    /* To put all elements one below other, img, h3, p and a */
+    gap: 20px;
+    max-width: 30%;
+    /* each card Take 30% of parent */
+    text-align: center;
+}
+
+/* big-feature section */
+.big-feature-section{
+    padding: 30px var(--padding-inline-section) 0;
+}
+
+.big-feature-container{
+    gap: 30px;
+}
+
+.big-feature-img img{
+    width: 100%;
+}
+
+.big-feature-desc{
+    flex-direction: column;
+    align-items: start;
+}
+
+/* examples section */
+.examples-header{
+    text-align: center;
+    flex-direction: column;
+}
+
+.examples-heaading-text{
+    margin-bottom: 20px;
+}
+
+.examples-area{
+    justify-content: space-between;
+    margin-block: 30px;
+}
+.examples-card{
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    transition: 0.2s ease-out;
+    
+}
+
+.examples-card:hover{
+    box-shadow: 0 0 50px #888;
+}
+
+.examples-card:nth-child(1){
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(./assets/asset\ 36.jpeg);
+    /* image with dark to light shading */
+   background-size: cover;
+   /* above property needs to be added just after background attribute, hence writing seperately */
+}
+
+
+.examples-card:nth-child(2){
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(./assets/asset\ 37.jpeg);
+    /* image with dark to light shading */
+    background-size: cover;
+   /* above property needs to be added just after background attribute, hence writing seperately */
+}
+
+.examples-card:nth-child(3){
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(./assets/asset\ 38.jpeg);
+    /* image with dark to light shading */
+    background-size: cover;
+    /* above property needs to be added just after background attribute, hence writing seperately */
+}
+
+.examples-card:nth-child(4){
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(./assets/asset\ 39.jpeg);
+    /* image with dark to light shading */
+    background-size: cover;
+    /* above property needs to be added just after background attribute, hence writing seperately */
+}
+
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
+
+/* cta-section */
+
+.cta-section{
+    background-color: #183b54;
+    padding: 120px var(--padding-inline-section) 80px;
+}
+.cta-section-container{
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    /* background-color: #183b54; */
+}
+
+.cta-section-container p{
+    color: white;
+    margin-top: 20px;
+}
+
+/* Footer */
+
+footer{
+    padding-block: 80px;
+    background-color: #ebf2fa;
+}
+.link-column{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Sub footer section */
+.subfooter{
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+}
+.sub-footer-container{
+    justify-content: center;
+    gap: 30px;
 }
